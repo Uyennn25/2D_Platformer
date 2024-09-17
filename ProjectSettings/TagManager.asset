@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 4213349541
+    locked: 0
+  - name: Decoration
+    uniqueID: 1981066803
+    locked: 0
+  - name: Flatforms
+    uniqueID: 223721145
+    locked: 0
+  - name: Player
+    uniqueID: 3362662307
+    locked: 0
+  - name: Foreground Decoretion
+    uniqueID: 669004369
+    locked: 0

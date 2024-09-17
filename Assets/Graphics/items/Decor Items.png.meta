@@ -97,115 +97,73 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Light post
+      name: Decor Items_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 191
-        width: 46
-        height: 65
-      alignment: 9
-      pivot: {x: 0.5217391, y: 0.12307692}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 250c3947d11caf6499af582936d60319
-      internalID: -1663500343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wall light
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 239
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62bfb759e4f602040955b50fce1af078
-      internalID: 149640732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tree
-      rect:
-        serializedVersion: 2
-        x: 66
+        x: 8
         y: 192
-        width: 60
-        height: 46
+        width: 32
+        height: 64
       alignment: 9
-      pivot: {x: 0.5, y: 0.13043478}
+      pivot: {x: 0.5, y: 0.125}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f20bd76ac21880c4495eb5d8469e6bb2
-      internalID: 835369039
+      spriteID: a25198d7794ec9d4888a39168b72d1ac
+      internalID: 1606982109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Open Door
+      name: Decor Items_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb169c1d83b449498e9c4638264edda
+      internalID: 1847059724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decor Items_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b6d0ebacb94b7489c862a2cc719a8b
+      internalID: 1072334179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decor Items_4
       rect:
         serializedVersion: 2
         x: 128
-        y: 192
-        width: 16
-        height: 32
-      alignment: 9
-      pivot: {x: 0.53333336, y: 0.25}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e551064d60de3c42918d65e23f8bf87
-      internalID: -2058227772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Decor Items_0
-      rect:
-        serializedVersion: 2
-        x: 219
-        y: 129
-        width: 1
-        height: 1
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36f5e199e07dfdc42b27df3933c123fe
-      internalID: 1299021224
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Close Door
-      rect:
-        serializedVersion: 2
-        x: 144
         y: 192
         width: 16
         height: 32
@@ -216,8 +174,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7751090a70c96284c8d456d7f50e1866
-      internalID: -1311344113
+      spriteID: 71705e36664490049b1e9667a16392e9
+      internalID: 1604994058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Decor Items_5
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0.1875, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c8b6e5ab481bd48a5d298114a0915d
+      internalID: 900194719
       vertices: []
       indices: 
       edges: []
@@ -235,6 +214,11 @@ TextureImporter:
     nameFileIdTable:
       Close Door: -1311344113
       Decor Items_0: 1299021224
+      Decor Items_1: 1847059724
+      Decor Items_2: 1606982109
+      Decor Items_3: 1072334179
+      Decor Items_4: 1604994058
+      Decor Items_5: 900194719
       Light post: -1663500343
       Open Door: -2058227772
       Tree: 835369039
