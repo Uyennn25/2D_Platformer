@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
    private Rigidbody2D rb;
 
    public float movementSpeed = 10.0f;
+
+   public float jumpForce = 16.0f;
    private void Start()
    {
       rb = GetComponent<Rigidbody2D>();
@@ -43,6 +45,11 @@ public class PlayerController : MonoBehaviour
    private void CheckInput()
    {
       movementInputDirection = Input.GetAxisRaw("Horizontal");
+
+      if (Input.GetButtonDown("Jump"))
+      {
+         Jump();
+      }
    }
 
    private void ApplyMovement()
@@ -55,5 +62,10 @@ public class PlayerController : MonoBehaviour
       isFacingRight = !isFacingRight;
       transform.Rotate(0.0f, 180.0f,0.0f);
       
+   }
+
+   private void Jump()
+   {
+      rb.velocity = new Vector2(rb.velocity.x, jumpForce);
    }
 }
