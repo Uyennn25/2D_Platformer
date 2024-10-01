@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -105,6 +102,8 @@ public class PlayerController : MonoBehaviour
    private void AppdateAnimations()
    {
       anim.SetBool("isWalking", isWalking);
+      anim.SetBool("isGround", isGround);
+     anim.SetFloat("yVelocity", rb.velocity.y);
    }
    private void CheckInput()
    {
@@ -113,6 +112,7 @@ public class PlayerController : MonoBehaviour
       if (Input.GetButtonDown("Jump"))
       {
          Jump();
+         
       }
    }
 
@@ -120,6 +120,7 @@ public class PlayerController : MonoBehaviour
    {
       if (canJump)
       {
+         
              rb.velocity = new Vector2(rb.velocity.x, jumpForce);
              amountOfJumpLeft--;
       }
