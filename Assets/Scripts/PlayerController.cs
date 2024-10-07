@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
    public float groundCheckRadius;
    public float wallCheckDistance;
    public float wallSlideSpeed;
+   public float movementForceInAir;
 
    public int amountOfJump = 1;
    
@@ -105,13 +106,16 @@ public class PlayerController : MonoBehaviour
          Flip();
       }
 
-      if (rb.velocity.x != 0)
+      if (movementInputDirection != 0)
       {
          isWalking = true;
+        
       }
       else
       {
          isWalking = false;
+        
+
       }
       
      
@@ -119,6 +123,7 @@ public class PlayerController : MonoBehaviour
 
    private void AppdateAnimations()
    {
+      
       anim.SetBool("isWalking", isWalking);
       anim.SetBool("isGround", isGround);
       anim.SetFloat("yVelocity", rb.velocity.y);
@@ -150,6 +155,17 @@ public class PlayerController : MonoBehaviour
       {
          rb.velocity = new Vector2(movementSpeed * movementInputDirection, rb.velocity.y);
       }
+      else if (!isGround && !isWallSliding && movementInputDirection != 0)
+      {
+         Vector2 forceToAdd = new Vector2(movementForceInAir * movementInputDirection, 0);
+         rb.AddForce(forceToAdd);
+         
+         if(Mathf.Abs(rb.velocity.x) < movementSpeed)
+         {
+            rb.velocity = new Vector2(movementSpeed * movementInputDirection , rb.velocity.y);
+         }
+      }
+      
       if (isWallSliding)
       {
          if (rb.velocity.y < -wallSlideSpeed)
@@ -157,6 +173,8 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, wallSlideSpeed);
          }
       }
+      
+      
    }
 
    private void Flip() // hàm lật player.

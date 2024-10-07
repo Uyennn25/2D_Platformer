@@ -32820,6 +32820,7 @@ MonoBehaviour:
   groundCheckRadius: 0.3
   wallCheckDistance: 0.4
   wallSlideSpeed: 0.1
+  movementForceInAir: 50
   amountOfJump: 2
   groundCheck: {fileID: 112108679}
   wallCheck: {fileID: 904022216}
