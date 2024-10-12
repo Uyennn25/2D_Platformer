@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
    public float wallCheckDistance;
    public float wallSlideSpeed;
    public float movementForceInAir;
+   public float airDragMultiplier = 0.95f;
+   public float variableJumpHeightMultiplier = 0.5f;
 
    public int amountOfJump = 1;
    
@@ -138,6 +140,11 @@ public class PlayerController : MonoBehaviour
          Jump();
          
       }
+
+      if (Input.GetButtonUp("Jump"))
+      {
+         rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * variableJumpHeightMultiplier);
+      }
    }
 
    private void Jump()
@@ -164,6 +171,10 @@ public class PlayerController : MonoBehaviour
          {
             rb.velocity = new Vector2(movementSpeed * movementInputDirection , rb.velocity.y);
          }
+      }
+      else if (!isGround && !isWallSliding && movementInputDirection == 0)
+      {
+         rb.velocity = new Vector2(rb.velocity.x * airDragMultiplier, rb.velocity.y);
       }
       
       if (isWallSliding)
